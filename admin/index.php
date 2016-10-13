@@ -3,7 +3,7 @@
 	if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) 
 	{	$adl = new AdminLogin();
 		$adminUser = $_POST['adminUser'];
-		$adminPassword = md5($_POST['adminPassword']);
+		$adminPassword = md5( $_POST['adminPassword'] );
 
 		$loginCheck = $adl->addminLogin( $adminUser,$adminPassword );
 	}
@@ -26,17 +26,17 @@
 			} 
 			?>
 			<div>
-				<input type="text" placeholder="Username"  name="adminUser"/>
+				<input type="text" name="adminUser">
 			</div>
 			<div>
-				<input type="password" placeholder="Password"  name="adminPassword"/>
+				<input type="password" name="adminPassword">
 			</div>
 			<div>
 				<input type="submit" value="Log in" />
 			</div>
 		</form><!-- form -->
 		<div class="button">
-			<a href="#">Training with live project</a>
+			<a href="#">Maya Shoping Center</a>
 		</div><!-- button -->
 	</section><!-- content -->
 </div><!-- container -->
